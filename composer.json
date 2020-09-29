@@ -1,0 +1,36 @@
+{
+    "name": "michael/roles",
+    "description": "This package gives Users roles.",
+    "keywords": ["laravel", "lumen", "role", "eloquent"],
+    "license": "Michael Ashraf",
+    "authors": [
+        {
+            "name": "Michael",
+            "email": "michael_ashraf93@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "fzaninotto/faker": "^1.9.1",
+        "laravel/lumen-framework": "^7.0",
+        "codeclimate/php-test-reporter": "^0.3.2",
+        "mockery/mockery": "^1.3.1",
+        "doctrine/dbal": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Michael\\Roles\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Michael\\Roles\\RolesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
