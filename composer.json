@@ -1,5 +1,5 @@
 {
-    "name": "michael-ashraf-93/roles",
+    "name": "michael/roles",
     "description": "This package gives Users roles.",
     "keywords": ["laravel", "lumen", "role", "eloquent"],
     "license": "Michael Ashraf",
