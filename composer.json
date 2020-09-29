@@ -1,5 +1,5 @@
 {
-    "name": "michael/roles",
+    "name": "michael-ashraf-93/roles",
     "description": "This package gives Users roles.",
     "keywords": ["laravel", "lumen", "role", "eloquent"],
     "license": "Michael Ashraf",
@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Michael\\Roles\\": "src/"
+            "michael-ashraf-93\\roles\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Michael\\Roles\\RolesServiceProvider"
+                "michael-ashraf-93\\roles\\RolesServiceProvider"
             ]
         }
     },
