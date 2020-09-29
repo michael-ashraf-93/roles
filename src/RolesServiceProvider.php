@@ -21,7 +21,7 @@ class RolesServiceProvider extends ServiceProvider
         $stub = __DIR__ . '/database/migrations/';
         $target = database_path('migrations') . '/';
 
-        $stub_controller = __DIR__ . '/Controllers/';
+//        $stub_controller = __DIR__ . '/Controllers/';
 //        $target_controller = app()->path('Http/Controllers');
 
         $this->publishes([

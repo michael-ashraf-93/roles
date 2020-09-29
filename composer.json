@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "michael-ashraf-93\\roles\\": "src/"
+            "Michael\\Roles\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "michael-ashraf-93\\roles\\RolesServiceProvider"
+                "Michael\\Roles\\RolesServiceProvider"
             ]
         }
     },
