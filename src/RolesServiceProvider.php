@@ -21,17 +21,24 @@ class RolesServiceProvider extends ServiceProvider
         $stub = __DIR__ . '/database/migrations/';
         $target = database_path('migrations') . '/';
 
-//        $stub_controller = __DIR__ . '/Controllers/';
-//        $target_controller = app()->path('Http/Controllers');
+        $stub_model = __DIR__ . '/Models/';
+        $target_model = app()->path();
+
+        $stub_controller = __DIR__ . '/Controllers/';
+        $target_controller = app()->path('/Http/Controllers');
 
         $this->publishes([
             $stub . 'create_roles_table.php' => $target . date('Y_m_d_His', time()) . '_create_roles_table.php',
             $stub . 'create_users_roles_table.php' => $target . date('Y_m_d_His', time() + 1) . '_create_users_roles_table.php'
         ], 'migrations');
 
-//        $this->publishes([
-//            $stub_controller . 'RolesController.php' => $target_controller . 'RolesController.php',
-//        ], 'migrations');
+        $this->publishes([
+            $stub_model . 'Role.php' => $target_model . 'Role.php',
+        ], 'models');
+
+        $this->publishes([
+            $stub_controller . 'RolesController.php' => $target_controller . 'RolesController.php',
+        ], 'controllers');
 
     }
 
